@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Company Analysis</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="data-analysis.html">Data Analysis</a></li>
+            <li><a href="npv-fv.html">Net Present and Future Value</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="feature">
+            <h2>Upload Balance Sheet for Analysis</h2>
+            <p>Please upload the balance sheet CSV file for analysis.</p>
+            <form id="balance-sheet-form">
+                <input type="file" id="balance-sheet-upload" accept=".csv">
+                <button type="button" onclick="analyzeBalanceSheet()">Analyze</button>
+            </form>
+        </div>
+        <div class="feature">
+            <h2>Financial Ratios</h2>
+            <div id="ratio-result"></div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Investment Hub. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

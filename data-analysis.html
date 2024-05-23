@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Data Analysis</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="company-analysis.html">Company Analysis</a></li>
+            <li><a href="npv-fv.html">Net Present and Future Value</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="feature">
+            <h2>Upload Stock Data for Analysis</h2>
+            <p>Please upload the stock data CSV file for analysis.</p>
+            <form id="data-analysis-form">
+                <input type="file" id="data-upload" accept=".csv">
+                <button type="button" onclick="analyzeData()">Analyze</button>
+            </form>
+        </div>
+        <div class="feature">
+            <h2>Closing Price Chart</h2>
+            <canvas id="closing-price-chart" width="1000" height="300"></canvas>
+        </div>
+        <div class="feature">
+            <h2>Yearly Highs and Lows</h2>
+            <table id="yearly-high-low-table">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>High</th>
+                        <th>Low</th>
+                    </tr>
+                </thead>
+                <tbody id="yearly-high-low-body">
+                    <!-- Table content will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Investment Hub. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Net Present and Future Value</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Net Present and Future Value</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="company-analysis.html">Company Analysis</a></li>
+            <li><a href="data-analysis.html">Data Analysis</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="feature">
+            <h2>Net Present Value (NPV) and Future Value (FV) Calculator</h2>
+            <form id="npv-fv-form">
+                <label for="initial-investment">Initial Investment:</label>
+                <input type="number" id="initial-investment" placeholder="Enter initial investment..." required>
+                <label for="discount-rate">Discount Rate (%):</label>
+                <input type="number" id="discount-rate" placeholder="Enter discount rate..." required>
+                <label for="periods">Number of Periods:</label>
+                <input type="number" id="periods" placeholder="Enter number of periods..." required>
+                <button type="button" onclick="calculateNPVFV()">Calculate NPV & FV</button>
+            </form>
+            <p id="npv-result"></p>
+            <p id="fv-result"></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Investment Hub. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
